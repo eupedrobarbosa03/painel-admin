@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Painel Administrativo</title>
+</head>
+<body>
+
+    <div id="page-container">
+        <header id="header-container">
+            <h2>Painel Administrativo</h2>
+            <nav id="navbar-container">
+                <a href="#">Admin</a>
+            </nav>
+        </header>
+
+        <main id="main-container">
+            <section id="section-container">
+                <section id="section-cadastro">
+                    <section id="section">
+                        <h2>Adicionar Funcionário</h2>
+                        <div class="container-inputs">
+                            <input type="text" id="nome-Funcionario" placeholder="Nome do Funcionario">
+
+                            <input type="text" id="cargo-Funcionario" placeholder="Cargo" list="cargos">
+                            
+                            <datalist id="cargos">
+                                <option value="Gerente"></option>
+                                <option value="Administrador"></option>
+                                <option value="Vendedor"></option>
+                                <option value="Estagiário"></option>
+                            </datalist>
+
+                            <input type="text" id="salario-Funcionario" placeholder="Salário do Funcionário">
+
+                            <div id="container-button-enviar">
+                                <input type="submit" id="enviar-cadastro" value="Adicionar">
+
+                                <button id="limpar-conteudo">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                                <p id="aviso-situacao-controle"></p>
+                            
+                            </div>
+
+                            
+                        </div>
+                    </section>
+                </section>
+                <section id="section-outros">
+                    <section id="section2">
+                        <h2>Controle Funcionário</h2>
+
+                        <div class="container-inputs" id="container-inputs-id">
+                            <button id="button-controle-adicionar">Adicionar</button>
+
+                            <button id="button-controle-atualizar">Atualizar</button>
+
+                            <button id="button-controle-remover">Remover</button>
+
+                        </div>
+
+                    </section>
+                    <section id="section3">
+
+                        <div id="info-atualizacao">
+                            <h2>Detalhes Atualização</h2>
+                            <ul id="info-antigo">
+                                <li id="info-antigo-numero"></li>
+                                <li id="info-antigo-nome"></li>
+                                <li id="info-antigo-cargo"></li>
+                                <li id="info-antigo-salario"></li>
+                            </ul>
+
+                            <div id="line-separator-atualizacao">
+                                
+                            </div>
+
+                            <ul id="info-novo">
+                                <li id="info-novo-numero"></li>
+                                <li id="info-novo-nome"></li>
+                                <li id="info-novo-cargo"></li>
+                                <li id="info-novo-salario"></li>    
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
