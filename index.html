@@ -21,7 +21,7 @@
         <main id="main-container">
             <section id="section-container">
                 <section id="section-cadastro">
-                    <section id="section">
+                    <section id="section-adicionar" class="section">
                         <h2>Adicionar Funcionário</h2>
                         <div class="container-inputs">
                             <input type="text" id="nome-Funcionario" placeholder="Nome do Funcionario">
@@ -47,8 +47,36 @@
                                 <p id="aviso-situacao-controle"></p>
                             
                             </div>
+                        </div>
+                    </section>
 
+                    <section id="section-editar" class="section">
+                        <h2>Editar Funcionário</h2>
+                        <div class="container-inputs">
+
+                            <input type="text" id="nome-edit-Funcionario" placeholder="Nome do Funcionario">
+
+                            <input type="text" id="cargo-edit-Funcionario" placeholder="Cargo" list="cargos">
                             
+                            <datalist id="cargos">
+                                <option value="Gerente"></option>
+                                <option value="Administrador"></option>
+                                <option value="Vendedor"></option>
+                                <option value="Estagiário"></option>
+                            </datalist>
+
+                            <input type="text" id="salario-Funcionario" placeholder="Salário do Funcionário">
+
+                            <div id="container-button-enviar">
+                                <input type="submit" id="enviar-cadastro" value="Adicionar">
+
+                                <button id="limpar-conteudo">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                                <p id="aviso-situacao-controle"></p>
+                            
+                            </div>
                         </div>
                     </section>
                 </section>
@@ -57,6 +85,7 @@
                         <h2>Controle Funcionário</h2>
 
                         <div class="container-inputs" id="container-inputs-id">
+
                             <button id="button-controle-adicionar">Adicionar</button>
 
                             <button id="button-controle-atualizar">Atualizar</button>
